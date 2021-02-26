@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/c7b60f51b3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- mapa -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div class="search-result">
+      <div>
+        <h2>IP Address Tracker</h2>
+      </div>
+      <div class="container input">
+        <input
+          type="text"
+          id="input"
+          placeholder="Search for any IP address or domain"
+        />
+        <button id="submit">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div id="error"></div>
+      <div class="container result">
+        <div>
+          <p>ip address</p>
+          <p id="ip"></p>
+        </div>
+        <div>
+          <p>location</p>
+          <p id="location"></p>
+        </div>
+        <div>
+          <p>timezone</p>
+          <p id="timezone"></p>
+        </div>
+        <div>
+          <p>isp</p>
+          <p id="isp"></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="mapid"></div>
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
